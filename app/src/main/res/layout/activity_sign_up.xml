@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sign_upActivity"
+    android:background="#39c166">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/flavour_fusion"
+            android:textSize="33sp"
+            android:textAlignment="center"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Name"
+            android:drawableStart="@drawable/baseline_person_24"
+            android:textSize="20sp"
+            android:textColor="@color/purple_700"
+            android:minHeight="50dp"
+            />
+
+
+        <EditText
+            android:id="@+id/email2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_address"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:minHeight="50dp"
+            tools:ignore="DuplicateIds" />
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Pass"
+            android:drawableStart="@drawable/baseline_password_24"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:minHeight="50dp"
+            />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/phone_no"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:minHeight="50dp"
+            />
+
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/sign_up"
+            android:textColor="@color/purple_200" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

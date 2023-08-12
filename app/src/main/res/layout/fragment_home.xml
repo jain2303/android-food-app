@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Your ViewPager -->
+        <androidx.viewpager.widget.ViewPager
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/main_content"
+            android:id="@+id/viewpager"/>
+
+        <!-- Section 1 -->
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/viewpager">
+
+            <!-- ImageButton 1 for Section 1 -->
+            <ImageButton
+                android:id="@+id/breakfast"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/go_to_breakfast"
+                android:src="@drawable/img_2"
+                android:scaleType="centerCrop"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <!-- ImageButton 2 for Section 1 -->
+            <ImageButton
+                android:id="@+id/lunch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/go_to_lunch"
+                android:src="@drawable/img_3"
+                android:scaleType="centerCrop"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+        </LinearLayout>
+
+        <!-- Section 2 -->
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear1">
+
+            <!-- ImageButton 1 for Section 2 -->
+            <ImageButton
+                android:id="@+id/snack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/go_to_snacks"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_4"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+            <!-- ImageButton 2 for Section 2 -->
+            <ImageButton
+                android:id="@+id/starters"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/go_to_starters"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_5"
+                tools:ignore="DuplicateClickableBoundsCheck" />
+
+        </LinearLayout>
+
+        <!-- Section 3 -->
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/linear2">
+
+            <!-- ImageButton 1 for Section 3 -->
+            <ImageButton
+                android:id="@+id/dinner"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/go_to_dinner"
+                android:src="@drawable/img_6" />
+
+            <!-- ImageButton 2 for Section 3 -->
+            <ImageButton
+                android:id="@+id/dessert"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/go_to_desserts"
+                android:src="@drawable/img_7" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
